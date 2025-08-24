@@ -1,0 +1,395 @@
+/* 全局样式 */
+body {
+    font-family: 'Microsoft YaHei', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #e67e22;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: #d35400;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#company-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* 滑动展示样式 */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: 40px auto;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.slide img {
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.slide-content {
+    text-align: center;
+    max-width: 800px;
+}
+
+.slide-content h2 {
+    color: #e67e22;
+    margin-bottom: 15px;
+}
+
+.slide-content p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.slider-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.slider-nav button {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: none;
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.slider-nav button:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/* 留言板页面样式 */
+.message-board {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.message-form {
+    margin-bottom: 30px;
+}
+
+.message-form h2 {
+    color: #e67e22;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+.btn {
+    background-color: #e67e22;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #d35400;
+}
+
+.messages {
+    margin-top: 30px;
+}
+
+.message {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.message:last-child {
+    border-bottom: none;
+}
+
+.message-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.message-author {
+    font-weight: bold;
+    color: #e67e22;
+}
+
+.message-date {
+    color: #999;
+}
+
+.message-content {
+    line-height: 1.6;
+}
+
+/* 关于我们页面样式 */
+.about-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.about-content h2 {
+    color: #e67e22;
+}
+
+/* 服务项目页面样式 */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.service {
+    flex: 1 1 300px;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.service h2 {
+    color: #e67e22;
+}
+
+/* 联系我们页面样式 */
+.contact-info {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.contact-info h2 {
+    color: #e67e22;
+}
+
+.contact-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contact-item {
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+.contact-map {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    
+    nav li {
+        margin: 5px 0;
+    }
+    
+    .features,
+    .services,
+    .contact-details {
+        flex-direction: column;
+    }
+    
+    /* 滑动展示响应式设计 */
+    .slider-container {
+        margin: 20px auto;
+    }
+    
+    .slide {
+        padding: 10px;
+    }
+    
+    .slide img {
+        height: 200px;
+    }
+    
+    .slide-content h2 {
+        font-size: 20px;
+    }
+    
+    .slide-content p {
+        font-size: 14px;
+    }
+    
+    .slider-nav button {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    main {
+        padding: 10px;
+    }
+    
+    .hero p {
+        font-size: 14px;
+    }
+    
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+    
+    .message-board {
+        padding: 15px;
+    }
+    
+    .service, .contact-item {
+        margin: 5px 0;
+    }
+}
+
+/* 超小屏幕设备优化 */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+    
+    .slide img {
+        height: 150px;
+    }
+    
+    .slide-content h2 {
+        font-size: 18px;
+    }
+    
+    .slide-content p {
+        font-size: 12px;
+    }
+    
+    .slider-nav {
+        padding: 0 10px;
+    }
+    
+    .slider-nav button {
+        width: 35px;
+        height: 35px;
+        font-size: 18px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        padding: 8px;
+    }
+}
